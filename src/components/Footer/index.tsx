@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 import { Select } from 'antd';
+import { BaseOptionType, DefaultOptionType } from 'antd/lib/select';
 const { Option } = Select;
 
 const FooterContainer = styled.footer`
@@ -217,7 +218,10 @@ const LanguageSelect = styled(Select)`
 `;
 
 const Footer = () => {
-  const handleLanguageChange = (value: unknown) => {
+  const handleLanguageChange = (
+    value: unknown,
+    option?: BaseOptionType | DefaultOptionType | (BaseOptionType | DefaultOptionType)[]
+  ) => {
     console.log('Language changed to:', value);
   };
 

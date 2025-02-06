@@ -390,9 +390,23 @@ const NetworkIcon = () => (
 
 // 修复 motion.img 的 viewport 属性
 <motion.img 
-  // ...
+  src="/v1.png" 
+  alt="Local pacel consolidators"
+  initial={{ opacity: 0, scale: 0.8, x: -50 }}
+  whileInView={{ 
+    opacity: 1, 
+    scale: 1, 
+    x: 0,
+  }}
+  transition={{ 
+    duration: 1,
+    ease: "easeOut"
+  }}
   viewport={{ once: true }}
-  // ...
+  whileHover={{
+    scale: 1.05,
+    transition: { duration: 0.3 }
+  }}
 />
 
 // 修复 ParticleEffect 的类型
