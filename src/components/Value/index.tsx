@@ -187,9 +187,9 @@ const DataCard = styled(motion.div)`
   }
 `;
 
+// 添加 CardHeader 的类型定义
 interface CardHeaderProps {
   isRightCard?: boolean;
-  children: React.ReactNode;
 }
 
 const CardHeader = styled.div<CardHeaderProps>`
@@ -388,9 +388,18 @@ const NetworkIcon = () => (
   </svg>
 );
 
-// 添加 cardType 类型
+// 修复 motion.img 的 viewport 属性
+<motion.img 
+  // ...
+  viewport={{ once: true }}
+  // ...
+/>
+
+// 修复 ParticleEffect 的类型
+type CardType = 'cargo' | 'ecosystem' | 'digital';
+
 interface ParticleEffectProps {
-  cardType: 'cargo' | 'ecosystem' | 'digital';
+  cardType: CardType;
 }
 
 const ParticleEffect: React.FC<ParticleEffectProps> = ({ cardType }) => {
@@ -1298,9 +1307,10 @@ const Value = () => {
                 <CardTitle>End-to-End All-in One</CardTitle>
               </CardHeader>
               <EcosystemImage>
-                <img 
+                <motion.img 
                   src="/360.png" 
                   alt="360 Ecosystem"
+                  viewport={{ once: true }}
                 />
               </EcosystemImage>
             </DataCard>
@@ -1313,7 +1323,11 @@ const Value = () => {
                 <CardTitle>Manage Fulfillment</CardTitle>
               </CardHeader>
               <PerformanceChart>
-                <img src="/performance-chart.png" alt="Performance Chart" />
+                <motion.img 
+                  src="/performance-chart.png" 
+                  alt="Performance Chart"
+                  viewport={{ once: true }}
+                />
               </PerformanceChart>
             </PerformanceCard>
             

@@ -154,10 +154,18 @@ const SearchButton = styled(motion.button)`
   }
 `;
 
-const ServiceCategories = styled.div`
+const HeroImage = styled(motion.img)`
+  flex: 1;
+  max-width: 420px;
+  height: auto;
+  margin-left: 2rem;
+`;
+
+const CategoriesContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
 `;
 
 const CategoryTitle = styled.div`
@@ -249,20 +257,6 @@ const CategoryButton = styled(motion.button)`
   }
 `;
 
-const HeroImage = styled(motion.img)`
-  flex: 1;
-  max-width: 420px;
-  height: auto;
-  margin-left: 2rem;
-`;
-
-const CategoriesContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2rem;
-`;
-
 const Hero = () => {
   return (
     <HeroContainer>
@@ -291,7 +285,7 @@ const Hero = () => {
               <SelectWrapper>
                 <Select 
                   defaultValue="Company Name" 
-                  bordered={false}
+                  variant="borderless"
                   options={[{ value: 'company', label: 'Company Name' }]}
                   showArrow
                   suffixIcon={<span style={{ fontSize: '10px' }}>▼</span>}
