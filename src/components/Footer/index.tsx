@@ -217,8 +217,7 @@ const LanguageSelect = styled(Select)`
 `;
 
 const Footer = () => {
-  const handleLanguageChange = (value: string) => {
-    // 这里添加语言切换逻辑
+  const handleLanguageChange = (value: unknown) => {
     console.log('Language changed to:', value);
   };
 

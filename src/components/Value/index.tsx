@@ -187,7 +187,12 @@ const DataCard = styled(motion.div)`
   }
 `;
 
-const CardHeader = styled.div`
+interface CardHeaderProps {
+  isRightCard?: boolean;
+  children: React.ReactNode;
+}
+
+const CardHeader = styled.div<CardHeaderProps>`
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -203,10 +208,6 @@ const CardTitle = styled.h3`
   font-size: 1.25rem;
   color: #0A2AB3;
   font-weight: 600;
-`;
-
-const StatsSection = styled.div`
-  margin-top: 2rem;
 `;
 
 const LogoStats = styled.div`
@@ -387,8 +388,12 @@ const NetworkIcon = () => (
   </svg>
 );
 
-// 修改 ParticleEffect 组件
-const ParticleEffect = ({ cardType }) => {
+// 添加 cardType 类型
+interface ParticleEffectProps {
+  cardType: 'cargo' | 'ecosystem' | 'digital';
+}
+
+const ParticleEffect: React.FC<ParticleEffectProps> = ({ cardType }) => {
   const particles = Array(12).fill(null);
   const icons = cardType === 'cargo' ? [
     { Icon: BoxIcon, delay: 0 },
