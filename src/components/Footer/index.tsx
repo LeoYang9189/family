@@ -19,25 +19,6 @@ const FooterContent = styled.div`
   gap: 4rem;
 `;
 
-const FooterLogo = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  
-  img {
-    width: 42px;
-    height: 42px;
-  }
-  
-  span {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #0A2AB3;
-  }
-`;
-
 const ContactInfo = styled.div`
   display: flex;
   flex-direction: column;
