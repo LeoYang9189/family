@@ -187,7 +187,7 @@ const DataCard = styled(motion.div)`
   }
 `;
 
-// 添加 CardHeader 的类型定义
+// 修改 CardHeader 的类型定义
 interface CardHeaderProps {
   isRightCard?: boolean;
 }
@@ -388,7 +388,7 @@ const NetworkIcon = () => (
   </svg>
 );
 
-// 修复 motion.img 的 viewport 属性类型
+// 修改 motion.img 的 viewport 属性类型
 <motion.img 
   src="/v3.png" 
   alt="Warehouse operator"
@@ -409,7 +409,7 @@ const NetworkIcon = () => (
   }}
 />
 
-// 修复 ParticleEffect 的类型
+// 修改 ParticleEffect 的类型
 type CardType = 'cargo' | 'ecosystem' | 'digital';
 
 interface ParticleEffectProps {
