@@ -1,0 +1,15 @@
+wtf/
+├── src/
+│   ├── components/
+│   │   ├── Header/
+│   │   ├── Hero/
+│   │   ├── Ecosystem/
+│   │   ├── ValueProposition/
+│   │   ├── FAQ/
+│   │   └── Footer/
+│   ├── pages/
+│   │   └── Home/
+│   ├── assets/
+│   │   └── images/
+│   ├── styles/
+│   └── App.tsx 
