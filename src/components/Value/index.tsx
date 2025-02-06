@@ -388,10 +388,10 @@ const NetworkIcon = () => (
   </svg>
 );
 
-// 修复 motion.img 的 viewport 属性
+// 修复 motion.img 的 viewport 属性类型
 <motion.img 
-  src="/v1.png" 
-  alt="Local pacel consolidators"
+  src="/v3.png" 
+  alt="Warehouse operator"
   initial={{ opacity: 0, scale: 0.8, x: -50 }}
   whileInView={{ 
     opacity: 1, 
