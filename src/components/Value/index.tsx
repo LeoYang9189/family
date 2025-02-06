@@ -402,7 +402,7 @@ const NetworkIcon = () => (
     duration: 1,
     ease: "easeOut"
   }}
-  viewport={{ once: true }}
+  viewport={{ once: true as const }}
   whileHover={{
     scale: 1.05,
     transition: { duration: 0.3 }
@@ -1441,20 +1441,10 @@ const Value = () => {
                 src="/v2.png" 
                 alt="Freight forwarders"
                 initial={{ opacity: 0, scale: 0.8, x: 50 }}
-                whileInView={{ 
-                  opacity: 1, 
-                  scale: 1, 
-                  x: 0,
-                }}
-                transition={{ 
-                  duration: 1,
-                  ease: "easeOut"
-                }}
-                viewport={{ once: true }}
-                whileHover={{
-                  scale: 1.05,
-                  transition: { duration: 0.3 }
-                }}
+                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true as const }}
+                whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
               />
             </FreightIllustration>
             <ContentSection>
@@ -1490,20 +1480,10 @@ const Value = () => {
                 src="/v3.png" 
                 alt="Warehouse operator"
                 initial={{ opacity: 0, scale: 0.8, x: -50 }}
-                whileInView={{ 
-                  opacity: 1, 
-                  scale: 1, 
-                  x: 0,
-                }}
-                transition={{ 
-                  duration: 1,
-                  ease: "easeOut"
-                }}
-                viewport={{ once: true }}
-                whileHover={{
-                  scale: 1.05,
-                  transition: { duration: 0.3 }
-                }}
+                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true as const }}
+                whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
               />
             </IllustrationSection>
             <ContentSection>
@@ -1527,20 +1507,10 @@ const Value = () => {
                 src="/v4.png" 
                 alt="Last mile operators"
                 initial={{ opacity: 0, scale: 0.8, x: 50 }}
-                whileInView={{ 
-                  opacity: 1, 
-                  scale: 1, 
-                  x: 0,
-                }}
-                transition={{ 
-                  duration: 1,
-                  ease: "easeOut"
-                }}
-                viewport={{ once: true }}
-                whileHover={{
-                  scale: 1.05,
-                  transition: { duration: 0.3 }
-                }}
+                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true as const }}
+                whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
               />
             </LastMileIllustration>
             <ContentSection>
