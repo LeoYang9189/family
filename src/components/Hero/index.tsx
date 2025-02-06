@@ -286,8 +286,6 @@ const Hero = () => {
                 <Select 
                   defaultValue="Company Name" 
                   variant="borderless"
-                  options={[{ value: 'company', label: 'Company Name' }]}
-                  showArrow
                   suffixIcon={<span style={{ fontSize: '10px' }}>▼</span>}
                 />
               </SelectWrapper>

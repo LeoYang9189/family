@@ -220,7 +220,7 @@ const LanguageSelect = styled(Select)`
 const Footer = () => {
   const handleLanguageChange = (
     value: unknown,
-    option?: BaseOptionType | DefaultOptionType | (BaseOptionType | DefaultOptionType)[]
+    _option?: BaseOptionType | DefaultOptionType | (BaseOptionType | DefaultOptionType)[]
   ) => {
     console.log('Language changed to:', value);
   };
@@ -295,7 +295,7 @@ const Footer = () => {
             <LanguageSelect 
               defaultValue="en" 
               onChange={handleLanguageChange}
-              bordered={false}
+              variant="borderless"
             >
               <Option value="en">EN-English</Option>
               <Option value="zh">ZH-简体中文</Option>
