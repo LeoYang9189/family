@@ -31,4 +31,4 @@ npm run dev
 
 # 在 public 文件夹中创建 logo 图片
 mkdir -p public
-# 将图片保存为 public/logo.png 
+# 将图片保存为 public/logo.png 00
